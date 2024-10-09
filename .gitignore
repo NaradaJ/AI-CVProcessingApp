@@ -1,0 +1,21 @@
+# Ignore build artifacts
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+*.mdb
+
+# Ignore configuration files
+appsettings*.json
+*.user
+*.suo
+*.sln.ide
+
+# Ignore Visual Studio files
+.vs/
+
+# Ignore Docker files
+.dockerignore
+Dockerfile
+docker-compose.yml

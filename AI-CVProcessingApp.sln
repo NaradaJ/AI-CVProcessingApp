@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{09D373C3-6E15-4CB3-99C7-F89CE638599A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AIProcessingService", "src\AIProcessingService\AIProcessingService.csproj", "{12669FFB-1280-4A04-81AA-830AD540270F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp", "src\WebApp\WebApp.csproj", "{D11C2039-5787-4268-A56B-A91022277525}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{12669FFB-1280-4A04-81AA-830AD540270F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12669FFB-1280-4A04-81AA-830AD540270F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12669FFB-1280-4A04-81AA-830AD540270F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12669FFB-1280-4A04-81AA-830AD540270F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D11C2039-5787-4268-A56B-A91022277525}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D11C2039-5787-4268-A56B-A91022277525}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D11C2039-5787-4268-A56B-A91022277525}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D11C2039-5787-4268-A56B-A91022277525}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{12669FFB-1280-4A04-81AA-830AD540270F} = {09D373C3-6E15-4CB3-99C7-F89CE638599A}
+		{D11C2039-5787-4268-A56B-A91022277525} = {09D373C3-6E15-4CB3-99C7-F89CE638599A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E4B0AE0D-6CF3-4E27-A1EC-5AAE203BD054}
+	EndGlobalSection
+EndGlobal

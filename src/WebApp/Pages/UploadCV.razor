@@ -1,0 +1,18 @@
+@page "/uploadcv"
+
+<h3>Upload CV</h3>
+
+<input type="file" @onchange="HandleFileSelected" />
+<button @onclick="UploadCV">Upload</button>
+
+@code {
+    private async Task HandleFileSelected(ChangeEventArgs e)
+    {
+        // Logic to handle file selection
+    }
+
+    private async Task UploadCV()
+    {
+        // Logic to upload the CV
+    }
+}
