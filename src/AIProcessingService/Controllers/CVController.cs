@@ -2,6 +2,8 @@ using Microsoft.AspNetCore.Mvc;
 using AIProcessingService.Models;
 using AIProcessingService.Services;
 using System.Threading.Tasks;
+using AIProcessingService.Services;
+
 
 namespace AIProcessingService.Controllers
 {
@@ -11,11 +13,15 @@ namespace AIProcessingService.Controllers
     {
         private readonly CVSummarizationService _summarizationService;
         private readonly RelevanceAssessmentService _relevanceService;
+        private readonly OpenAIService _openAIService; // Add OpenAI service
 
-        public CVController(CVSummarizationService summarizationService, RelevanceAssessmentService relevanceService)
+        public CVController(CVSummarizationService summarizationService, 
+                            RelevanceAssessmentService relevanceService,
+                            OpenAIService openAIService) // Inject OpenAI service
         {
             _summarizationService = summarizationService;
             _relevanceService = relevanceService;
+            _openAIService = openAIService; // Assign OpenAI service
         }
 
         // POST: api/CV/Upload
@@ -27,8 +33,11 @@ namespace AIProcessingService.Controllers
                 return BadRequest("CV data is required.");
             }
 
-            // Summarize the CV
+            // Summarize the CV using custom summarization
             var summary = await _summarizationService.SummarizeCVAsync(cv);
+            
+            // Alternatively, use OpenAI for summary
+            // var summary = await _openAIService.GetCompletion(cv.ToString());
 
             // Assess relevance
             var relevance = await _relevanceService.CalculateRelevanceAsync(cv);

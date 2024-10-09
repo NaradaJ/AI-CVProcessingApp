@@ -17,6 +17,9 @@ namespace AIProcessingService
             services.AddScoped<CVSummarizationService>();
             services.AddScoped<TechStackHighlightService>();
             services.AddScoped<VectorStorageService>();
+            services.AddControllers();
+            services.AddScoped<OpenAIService>();
+
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

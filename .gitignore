@@ -5,7 +5,7 @@ obj/
 *.exe
 *.pdb
 *.mdb
-
+projects_CV.md
 # Ignore configuration files
 appsettings*.json
 *.user

@@ -1,0 +1,10 @@
+{
+    "ignoreWords": [
+      "refint",
+      "staticwebassets",
+      "dgspec",
+      "appsettings",
+      "wwwroot"
+    ]
+  }
+  
